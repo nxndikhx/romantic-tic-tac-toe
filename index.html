@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOXO Game 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <h1 class="game-title">XOXO Game 💘</h1>
+        <button id="scroll-button">👇 Scroll Down to Play 👇</button>
+    </div>
+
+    <!-- Game Mode Selection -->
+    <div id="mode-selection">
+        <h2>Select Game Mode 💕</h2>
+        <button id="single-player" class="game-mode">Single Player (Player vs Computer) 💻</button>
+        <button id="two-player" class="game-mode">Two Player (Player 1 vs Player 2) 👫</button>
+    </div>
+
+    <!-- Game Board -->
+    <div id="game-section" class="hidden">
+        <h2 id="turn-indicator"></h2>
+        <div id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restartButton" class="hidden">💖 Play Again 💖</button>
+    </div>
+
+    <!-- Winner Announcement -->
+    <div id="winningMessage" class="hidden">
+        <div class="confetti"></div>
+        <div id="winner-popup">
+            <h2 id="winningMessageText"></h2>
+            <button id="playAgainButton">Play Again 🎉</button>
+        </div>
+    </div>
+</body>
+</html>
